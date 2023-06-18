@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans&display=swap');
+
+.navbar { 
+    background-color: rgb(3, 8, 16);
+    color: white; 
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.myButton {
+    background-color: rgb(3, 8, 16);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.myButton:hover {
+    background-color: white;
+    color: rgb(3, 8, 16);
+}
