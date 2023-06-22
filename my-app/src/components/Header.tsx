@@ -9,7 +9,7 @@ export default function Header(){
     return(<nav className="navbar">
         <ul>
             <li>
-                  <Link href="/">
+                  <Link href="/" className="text">
                     <strong>Ututor</strong>
                   </Link>
       
@@ -18,18 +18,16 @@ export default function Header(){
       
          <ul>
              <li>
-                    <Link href="/">Book</Link>
+                    <Link href="/" className="text">Book</Link>
              </li>
              <li>
-                    <Link href="/pages/about">About</Link>
+                    <Link href="/pages/about" className="text">About</Link>
              </li>
              <li>
-                  <Link href="/pages/contact">Contact</Link>
+                  <Link href="/pages/contact" className="text">Contact</Link>
              </li>
              <li>
-                  <button id="theme-toggle" type="button"  className="myButton" data-theme-switcher="light">
-                    Sign in
-                  </button>
+                 <Link href="/pages/contact" className="text"> Sign in </Link>
               </li>
           </ul>
            
