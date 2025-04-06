@@ -42,7 +42,7 @@ func Body(title string, cards []ProjectCard) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "</title><!-- Tailwind CSS CDN (for development) --><script src=\"https://cdn.tailwindcss.com\"></script><!-- HTMX --><script src=\"https://unpkg.com/htmx.org@2.0.4\" integrity=\"sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+\" crossorigin=\"anonymous\"></script></head><body class=\"bg-gray-100\"><header class=\"bg-blue-600 text-white p-4 shadow-md\"><h1 class=\"text-2xl font-bold\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "</title><!-- Tailwind CSS CDN (for development) --><script src=\"https://cdn.tailwindcss.com\"></script><!-- htmx --><script src=\"https://unpkg.com/htmx.org@2.0.4\" integrity=\"sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+\" crossorigin=\"anonymous\"></script></head><body class=\"bg-gray-100\"><header class=\"bg-blue-600 text-white p-4 shadow-md\"><h1 class=\"text-2xl font-bold\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -55,25 +55,15 @@ func Body(title string, cards []ProjectCard) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "</h1></header><div class=\"content w-full p-4\"><h2 class=\"text-xl font-semibold mb-4\">Welcome to my portfolio</h2><div class=\"bg-white p-4 rounded-lg shadow mb-4\"></div><p class=\"mb-4\">This is a simple portfolio page.</p><p class=\"mb-4\">hello imran</p><p class=\"mb-4\">Feel free to explore my work and projects.</p><div class=\"bg-green-500 hover:bg-green-600 text-white p-2 rounded cursor-pointer transition\" hx-post=\"/mouse_entered\" hx-trigger=\"click\">Here Mouse, Mouse!</div><div class=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pb-4\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "</h1></header><div class=\"content w-full p-4\"><div id=\"accordion-collapse\" data-accordion=\"collapse\"><!-- Projects Section -->")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		for _, card := range cards {
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<div class=\"min-w-0 flex-1\">")
-			if templ_7745c5c3_Err != nil {
-				return templ_7745c5c3_Err
-			}
-			templ_7745c5c3_Err = Card(card).Render(ctx, templ_7745c5c3_Buffer)
-			if templ_7745c5c3_Err != nil {
-				return templ_7745c5c3_Err
-			}
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "</div>")
-			if templ_7745c5c3_Err != nil {
-				return templ_7745c5c3_Err
-			}
+		templ_7745c5c3_Err = Accordian("Projects", cards, "project").Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "</div></div></body></html>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<!-- Skills Section --><h2 id=\"accordion-collapse-heading-skills\"><button type=\"button\" class=\"flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3\" data-accordion-target=\"#accordion-collapse-body-skills\" aria-expanded=\"false\" aria-controls=\"accordion-collapse-body-skills\"><span>Skills</span> <svg data-accordion-icon class=\"w-3 h-3 rotate-180 shrink-0\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 10 6\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5 5 1 1 5\"></path></svg></button></h2><div id=\"accordion-collapse-body-skills\" class=\"hidden\" ariaLabelledby=\"accordion-collapse-heading-skills\"><div class=\"p-5 border border-b-0 border-gray-200\"><p class=\"text-gray-500\">List your skills here. For example: HTML, CSS, JavaScript, Go, etc.</p></div></div><!-- Education Section --><h2 id=\"accordion-collapse-heading-education\"><button type=\"button\" class=\"flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3\" data-accordion-target=\"#accordion-collapse-body-education\" aria-expanded=\"false\" aria-controls=\"accordion-collapse-body-education\"><span>Education</span> <svg data-accordion-icon class=\"w-3 h-3 rotate-180 shrink-0\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 10 6\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5 5 1 1 5\"></path></svg></button></h2><div id=\"accordion-collapse-body-education\" class=\"hidden\" ariaLabelledby=\"accordion-collapse-heading-education\"><div class=\"p-5 border border-t-0 border-gray-200\"><p class=\"text-gray-500\">Provide your education details here, such as your degree, institution, and graduation year.</p></div></div></div></div></body></html>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
