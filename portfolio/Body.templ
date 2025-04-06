@@ -1,0 +1,43 @@
+package main
+
+templ Body(title string, cards []ProjectCard) {
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <title>{ title }</title>
+            <!-- Tailwind CSS CDN (for development) -->
+            <script src="https://cdn.tailwindcss.com"></script>
+            <!-- HTMX -->
+            <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+        </head>
+        <body class="bg-gray-100">
+            <header class="bg-blue-600 text-white p-4 shadow-md">
+                <h1 class="text-2xl font-bold">{ title }</h1>
+            </header>
+            <div class="content w-full p-4">
+                <h2 class="text-xl font-semibold mb-4">Welcome to my portfolio</h2>
+                <div class="bg-white p-4 rounded-lg shadow mb-4">
+                </div>
+                <p class="mb-4">This is a simple portfolio page.</p>
+                <p class="mb-4">hello imran</p>
+                <p class="mb-4">Feel free to explore my work and projects.</p>
+                <div 
+                    class="bg-green-500 hover:bg-green-600 text-white p-2 rounded cursor-pointer transition"
+                    hx-post="/mouse_entered" 
+                    hx-trigger="click"
+                >
+                    Here Mouse, Mouse!
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pb-4">
+                    for _, card := range cards {
+                        <div class="min-w-0 flex-1">
+                            @Card(card)
+                        </div>
+                    }
+                </div>
+            </div>
+        </body>
+    </html>
+}

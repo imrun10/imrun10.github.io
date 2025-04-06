@@ -1,0 +1,103 @@
+{
+  "cards": [
+    {
+      "imgDir": "../portfolio/assets/images/test.jpg",
+      "projectName": "Farz - AI Recycling Bin",
+      "projectDescription": "Built smart recycling bins using Arduino and Raspberry Pi with machine learning to classify trash (paper, plastic, metal). Worked in developer team, improving teamwork and entrepreneurial skills.",
+      "readMore": true,
+      "readMoreLink": "https://github.com/imrun10/farz",
+      "github": true,
+      "githubLink": "https://github.com/imrun10/farz"
+    },
+    {
+      "imgDir": "../portfolio/assets/images/test.jpg",
+      "projectName": "Full-wave Rectification",
+      "projectDescription": "Designed and simulated a full-wave rectifier circuit from scratch, explaining theory and calculations for ELEC 330/L course.",
+      "readMore": true,
+      "readMoreLink": "/projects/elec330",
+      "github": false,
+      "githubLink": ""
+    },
+    {
+      "imgDir": "../portfolio/assets/images/test.jpg",
+      "projectName": "Pong Game (8086 Assembly)",
+      "projectDescription": "Implemented classic Pong game in 8086 Assembly for Microprocessors course (CMPE 475).",
+      "readMore": true,
+      "readMoreLink": "https://github.com/imrun10/Pong-Game-8086-ASM",
+      "github": true,
+      "githubLink": "https://github.com/imrun10/Pong-Game-8086-ASM"
+    },
+    {
+      "imgDir": "../portfolio/assets/images/test.jpg",
+      "projectName": "Smart Wireless Sensor for Machine Health",
+      "projectDescription": "Capstone project developing wireless MEMS sensor solution for gearbox fault detection in heavy machinery using Raspberry Pi, Python, and full-stack technologies.",
+      "readMore": true,
+      "readMoreLink": "/projects/capstone",
+      "github": false,
+      "githubLink": ""
+    },
+    {
+      "imgDir": "../portfolio/assets/images/test.jpg",
+      "projectName": "Grade Management Application",
+      "projectDescription": "Led team as Scrum Master to develop full-stack grade management web app using React, Node.js, Express, and MySQL following Agile methodology.",
+      "readMore": true,
+      "readMoreLink": "https://github.com/imrun10/GradeCourseApp",
+      "github": true,
+      "githubLink": "https://github.com/imrun10/GradeCourseApp"
+    },
+    {
+      "imgDir": "../portfolio/assets/images/test.jpg",
+      "projectName": "DE10 Lite Board Processor",
+      "projectDescription": "Transformed DE10 Lite Board into functional processor using Verilog HDL and Quartus/ModelSim, gaining low-level system design experience.",
+      "readMore": true,
+      "readMoreLink": "https://github.com/imrun10/VerilogProcessor",
+      "github": true,
+      "githubLink": "https://github.com/imrun10/VerilogProcessor"
+    },
+    {
+      "imgDir": "../portfolio/assets/images/test.jpg",
+      "projectName": "Arduino Washing Machine",
+      "projectDescription": "Designed embedded washing machine system using Arduino with finite state machine approach. Presented at AUBH Poster Day.",
+      "readMore": true,
+      "readMoreLink": "https://github.com/imrun10/ArduinoWashingMachine",
+      "github": true,
+      "githubLink": "https://github.com/imrun10/ArduinoWashingMachine"
+    },
+    {
+      "imgDir": "../portfolio/assets/images/test.jpg",
+      "projectName": "Lost and Found Application",
+      "projectDescription": "Java/JavaFX application following MVC architecture for campus lost-and-found system, improving project management skills.",
+      "readMore": true,
+      "readMoreLink": "https://github.com/imrun10/Lost-and-Found-Application-Project",
+      "github": true,
+      "githubLink": "https://github.com/imrun10/Lost-and-Found-Application-Project"
+    },
+    {
+      "imgDir": "../portfolio/assets/images/test.jpg",
+      "projectName": "Environmental Research Paper",
+      "projectDescription": "Award-winning comparative study on Bahrain supermarket sustainability practices, presented at AUBH Research Day 2023.",
+      "readMore": true,
+      "readMoreLink": "/projects/research-day-2023",
+      "github": false,
+      "githubLink": ""
+    },
+    {
+      "imgDir": "../portfolio/assets/images/test.jpg",
+      "projectName": "Machine Learning Recycling Bin",
+      "projectDescription": "Early prototype of Arduino/Raspberry Pi bins with basic ML classification, sparking interest in embedded AI applications.",
+      "readMore": false,
+      "readMoreLink": "",
+      "github": false,
+      "githubLink": ""
+    },
+    {
+      "imgDir": "../portfolio/assets/images/test.jpg",
+      "projectName": "ML Loan Default Predictor",
+      "projectDescription": "MATLAB machine learning project predicting bank loan defaults with technical report writing. Presented at AUBH Poster Day 2021.",
+      "readMore": true,
+      "readMoreLink": "https://github.com/imrun10/ML-Loan-Default",
+      "github": true,
+      "githubLink": "https://github.com/imrun10/ML-Loan-Default"
+    }
+  ]
+}
