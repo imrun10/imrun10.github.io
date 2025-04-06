@@ -47,7 +47,7 @@ portfolio/
 
    ```sh
    git clone https://github.com/imrun10/imrun10.github.io.git
-   cd imrun10/imrun10.github.io.git/portfolio
+   cd imrun10/imrun10.github.io/portfolio
    ```
 
 2. Install dependencies:
